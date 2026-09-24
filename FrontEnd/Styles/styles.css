@@ -1,0 +1,560 @@
+:root {
+  /*--MainColor: #5B493F;*/
+  /*--SelectedMainColor: #755D51;*/
+  /*--ActiveMainColor: #8F7263;*/
+  /*--FinalMainColor: #A88674;*/
+
+  /*--TitleColor: #DECEC1;*/
+  /*--SelectedTitleColor: #C4B6AB;*/
+  /*--ActiveTitleColor: #AB9E95;*/
+
+  /*--DescriptionColor: #A19184;*/
+  /*--icons: #B4A497;*/
+  /*--ButtonsColor: #E8CDBC;*/
+  /*--MiniAreaColor: #695749;*/
+
+  /*--NormalBorderRadius: 30px;*/
+
+  --MainColor: #1F5192;
+  --TitleColor: #FBF1F0;
+  --DescriptionColor: #D06DB7;
+
+  --SelectedMainColor:
+      color-mix(in srgb, var(--MainColor), white 15%);
+
+  --ActiveMainColor:
+      color-mix(in srgb, var(--MainColor), white 30%);
+
+  --FinalMainColor:
+      color-mix(in srgb, var(--MainColor), white 45%);
+
+  --SelectedTitleColor:
+      color-mix(in srgb, var(--TitleColor), black 12%);
+
+  --ActiveTitleColor:
+      color-mix(in srgb, var(--TitleColor), black 25%);
+
+  --icons:
+      color-mix(in srgb, var(--DescriptionColor), white 20%);
+
+  --ButtonsColor:
+      color-mix(in srgb, var(--DescriptionColor), white 55%);
+
+  --MiniAreaColor:
+      color-mix(in srgb, var(--MainColor), black 10%);
+
+  --NormalBorderRadius: 30px;
+}
+
+body{
+  margin: 0;
+}
+
+.Widget {
+  background-color: var(--MainColor);
+  border-radius: var(--NormalBorderRadius);
+}
+
+.WeatherApp {
+  width: 275px;
+  height: 120px;
+}
+
+.DeviceInfoApp {
+  width: 130px;
+  height: 120px;
+}
+
+.Calender {
+  width: 275px;
+  height: 250px;
+}
+
+.Calculator {
+  width: 175px;
+  height: 250px;
+}
+
+.MusicPlayer {
+  width: 420px;
+  height: 120px;
+  display: flex;
+  z-index: -2;
+}
+
+.LargeImageViewer {
+  width: 275px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.SmallImageViewer {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+div {
+  font-family: "Huninn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Temperature {
+  margin-top: 15px;
+  color: var(--TitleColor);
+  font-size: 25px;
+  display: inline-block;
+}
+
+.Date {
+  margin-top: 20px;
+  color: var(--TitleColor);
+  font-size: 20px;
+  display: inline-block;
+}
+
+.DeviceInfoTitle {
+  margin-top: 65px;
+  margin-left: 15px;
+  color: var(--TitleColor);
+  font-size: 25px;
+  display: inline-block;
+}
+
+.Description {
+  color: var(--DescriptionColor);
+  font-size: 12px;
+}
+
+.TopPart {
+  padding-top: 5px;
+}
+
+.Content {
+  margin-left: 15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+       'FILL' 0,
+       'wght' 400,
+       'GRAD' 0,
+       'opsz' 20
+}
+
+.icons {
+  color: var(--icons);
+  margin-right: 2px;
+}
+
+.Details {
+  color: var(--DescriptionColor);
+  font-size: 10px;
+  padding-right: 15px;
+}
+
+.WeatherDetails {
+  margin-top: 20px;
+  margin-left: 13px;
+}
+
+.Horizontal {
+  display: flex;
+  align-items: center;
+}
+
+.largeIcon {
+  color: var(--TitleColor);
+  position: absolute;
+}
+
+.WeatherIcon {
+  position: absolute;
+  margin-left: 215px;
+  margin-top: 25px;
+  color: var(--MainColor);
+}
+
+.DeviceInfoIcon {
+  color: var(--MainColor);
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 22px;
+}
+
+.Invisible{
+  opacity: 0;
+}
+
+.NonExistent {
+  display: none;
+}
+
+.DayNumberOnCalender {
+  color: var(--TitleColor);
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  justify-self: center;
+  font-size: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.DayNumberOnCalender:hover {
+  background-color: var(--SelectedMainColor);
+}
+
+.DayNumberOnCalender:active {
+  background-color: var(--ActiveMainColor);
+}
+
+.Today {
+  background-color: var(--TitleColor);
+  color: var(--MainColor);
+  font-weight: bold;
+}
+
+.Today:hover {
+  background-color: var(--SelectedTitleColor);
+}
+
+.Today:active {
+  background-color: var(--ActiveTitleColor);
+}
+
+.PastMonthDay {
+  color: var(--DescriptionColor);
+  font-size: 9px;
+}
+
+.DayOnCalender {
+}
+
+.AllDaysOnCalenderContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-left: 15px;
+  width: 245px;
+  height: 150px;
+  margin-top: 10px;
+  row-gap: 2px;
+}
+
+.DaysHolder {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  text-align: center;
+}
+
+.CalenderButtons {
+  position: absolute;
+  color: var(--TitleColor);
+  margin-top: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  transition: color 0.15s, background-color 0.15s;
+  cursor: pointer;
+}
+
+.CalenderButtons:hover {
+  background-color: var(--TitleColor);
+  color: var(--MainColor);
+}
+
+.CalenderButtons:active {
+  background-color: var(--ActiveTitleColor);
+}
+
+.SmallTitle {
+  color: var(--TitleColor);
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.WorldMapWeatherIcon {
+  position: absolute;
+  color: var(--TitleColor);
+}
+
+.CurrentWeatherIcon {
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.CurrentTime {
+  margin-top: 15px;
+  color: var(--TitleColor);
+  font-size: 40px;
+  justify-self: right;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.CurrentDate {
+  color: var(--DescriptionColor);
+  font-size: 14px;
+  justify-self: right;
+  margin-right: 15px;
+}
+
+.WorldClockGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.WorldClockClock {
+  width: 120px;
+  height: 50px;
+}
+
+.SidedRow {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+
+  margin-bottom: 2px;
+}
+
+.CountryName{
+  color: var(--TitleColor);
+  font-size: 11px;
+}
+
+.CountryDifferenceTime {
+  color: var(--DescriptionColor);
+  text-align: right;
+  font-size: 10px;
+}
+
+.CountryTime {
+  color: var(--TitleColor);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.CountryWeatherIcon {
+  color: var(--TitleColor);
+}
+
+.RefreshArea {
+  display: flex;
+  margin-left: auto;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  transition: background-color 0.15s;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.RefreshArea:hover {
+  background-color: var(--SelectedMainColor);
+  justify-self: center;
+}
+
+.RefreshArea:active {
+  background-color: var(--ActiveMainColor);
+  justify-self: center;
+}
+
+.SongThumbnail {
+  border-radius: var(--NormalBorderRadius) 0 0 var(--NormalBorderRadius);
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--SelectedMainColor);
+  display: inline-block;
+  z-index: 1;
+}
+
+.SongTitle {
+  color: var(--TitleColor);
+  width: 260px;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.SongArtist {
+  margin-top: 5px;
+  color: var(--DescriptionColor);
+  font-size: 12px;
+}
+
+.MusicControlsArea {
+  position: absolute;
+  width: 135px;
+  height: 45px;
+  border-radius: 45px;
+  margin-top: 15px;
+  background-color: var(--MiniAreaColor);
+  margin-left: 135px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.InsideButtons {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 11px;
+  color: var(--MiniAreaColor);
+  transition: color 0.15s;
+}
+
+.InsideButtonHolder {
+  transition: color 0.15s;
+}
+
+.InsideButtonHolder:hover {
+  color: var(--MainColor);
+}
+
+.InsideButtons:hover {
+  color: var(--icons);
+}
+
+body:has(.InsideButtonHolder:hover) .InsideButtons{
+  color: var(--icons);
+}
+
+body:has(.InsideButtons:hover) .InsideButtonHolder{
+  color: var(--MainColor);
+}
+
+.InsideButtonHolder:active {
+  color: var(--SelectedMainColor);
+}
+
+body:has(.InsideButtons:active) .InsideButtonHolder {
+  color: var(--SelectedMainColor);
+}
+
+.MusicThumbnail {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.MusicButton {
+  color: var(--icons);
+  transition: background-color 0.15s, color 0.15s;
+  cursor: pointer;
+}
+
+.MusicButton:hover {
+  color: var(--MainColor);
+}
+
+.MusicButton:active {
+  color: var(--SelectedMainColor);
+}
+
+.MusicIcon {
+  position: absolute;
+  margin-left: 28px;
+  margin-top: 32px;
+  z-index: -1;
+}
+
+.CalculatorResultArea {
+  height: 40px;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.NumbersGrid {
+  margin-top: 5px;
+  height: 190px;
+  /*width: 100%;*/
+  width: calc(100% - 30px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-left: 15px;
+}
+
+.History {
+  color: var(--DescriptionColor);
+  font-size: 14px;
+}
+
+.Result {
+  color: var(--TitleColor);
+  font-size: 20px;
+}
+
+.NumberBlock {
+  border-radius: 10px;
+  background-color: var(--SelectedMainColor);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--TitleColor);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.NumberBlock:hover {
+  background-color: var(--ActiveMainColor);
+}
+
+.NumberBlock:active {
+  background-color: var(--FinalMainColor);
+}
+
+.DoubleSize {
+  width: 67px;
+}
+
+.EqualSign {
+  background-color: var(--TitleColor);
+  color: var(--MainColor);
+}
+
+.EqualSign:hover {
+  background-color: var(--SelectedTitleColor);
+}
+
+.EqualSign:active {
+  background-color: var(--ActiveTitleColor);
+}
+
+.Error {
+  font-size: 12px;
+}
+
+.ImageViewed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  position: relative;
+  object-position: center;
+}
+
+.Clickable {
+  cursor: pointer;
+}
+
+.ImageIcon {
+  position: absolute;
+  color: var(--TitleColor);
+}

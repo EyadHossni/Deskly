@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="applicationTitle" content="Calculator Widget"/>
+    <meta name="windowSize" content="175 250"/>
+    <meta name="windowBorderRadius" content="30"/>
+    
+    <title>Calculator Widget</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Styles/styles.css">
+    
+    <script src="https://kit.fontawesome.com/768b4c0e2c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="Widget Calculator">
+      <div class="CalculatorResultArea">
+        <div class="Content History" id="History">0</div>
+        <div class="Content Result" id="Result"></div>
+      </div>
+      <div class="NumbersGrid">
+        <div class="NumberBlock" onclick="AddNumber(7)">7</div>
+        <div class="NumberBlock" onclick="AddNumber(8)">8</div>
+        <div class="NumberBlock" onclick="AddNumber(9)">9</div>
+        <div class="NumberBlock" onclick="AddOperation('-')">&#8211;</div>
+        
+        <div class="NumberBlock" onclick="AddNumber(4)">4</div>
+        <div class="NumberBlock" onclick="AddNumber(5)">5</div>
+        <div class="NumberBlock" onclick="AddNumber(6)">6</div>
+        <div class="NumberBlock" onclick="AddOperation('+')">+</div>
+        
+        <div class="NumberBlock" onclick="AddNumber(1)">1</div>
+        <div class="NumberBlock" onclick="AddNumber(2)">2</div>
+        <div class="NumberBlock" onclick="AddNumber(3)">3</div>
+        <div class="NumberBlock" onclick="AddOperation('÷')">÷</div>
+        
+        <div class="NumberBlock" onclick="AddDot();">.</div>
+        <div class="NumberBlock" onclick="AddNumber(0)">0</div>
+        <div class="NumberBlock" onclick="BackSpace()"><i class="fa-solid fa-delete-left fa-sm"></i></div>
+        <div class="NumberBlock" onclick="AddOperation('x')">x</div>
+        
+        <div class="NumberBlock DoubleSize" onclick="ClearEquation()">C</div>
+        <div class="NumberBlock DoubleSize EqualSign" onclick="SolveEquation()">=</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="Scripts/CalculatorScript.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="applicationTitle" content="Weather Widget"/>
+    <meta name="windowSize" content="275 120"/>
+    <meta name="windowBorderRadius" content="30"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/768b4c0e2c.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="Styles/styles.css">
+    
+    <title>WeatherWidget</title>
+  </head>
+  <body>
+    <div class="Widget WeatherApp" id="WeatherWidget">
+
+      <i class="fa-solid fa-certificate fa-4x largeIcon" style="margin-left: 195px; margin-top: 10px;"></i>
+
+      <i class="fa-solid fa-sun fa-2xl WeatherIcon" id="Sunny"></i>
+      <i class="fa-solid fa-cloud-sun fa-2xl WeatherIcon Invisible" id="SunnyCloudy"></i>
+      <i class="fa-solid fa-moon fa-2xl WeatherIcon Invisible" id="Night"></i>
+      <i class="fa-solid fa-cloud-moon fa-2xl WeatherIcon Invisible" id="NightCloudy"></i>
+      <i class="fa-solid fa-smog fa-2xl WeatherIcon Invisible" id="Fog"></i>
+      <i class="fa-solid fa-cloud-sun-rain fa-2xl WeatherIcon Invisible" id="SunDrizzle"></i>
+      <i class="fa-solid fa-cloud-moon-rain fa-2xl WeatherIcon Invisible" id="MoonDrizzle"></i>
+      <i class="fa-solid fa-cloud-showers-heavy fa-2xl WeatherIcon Invisible" id="Rainy"></i>
+      <i class="fa-regular fa-snowflake fa-2xl WeatherIcon Invisible" id="Snowy"></i>
+      <i class="fa-solid fa-cloud-showers-water fa-2xl WeatherIcon Invisible" id="Showers"></i>
+      <i class="fa-solid fa-cloud-bolt fa-2xl WeatherIcon Invisible" id="Thunderstorm"></i>
+
+      <div class="Temperature Content"><span id="Temperature">27</span>&deg;C</div>
+
+      <div class="Description TopPart Content" id="LocationAddress">Cairo Egypt</div>
+      <div class="Description Content" id="WeatherSummary">Sunny</div>
+
+      <div class="WeatherDetails Horizontal">
+
+        <i class="fa-solid fa-droplet fa-2xs icons"></i>
+        <div class="Details" id="RelativeHumidity">88%</div>
+        <i class="fa-solid fa-cloud-rain fa-2xs icons"></i>
+        <div class="Details" id="PrecipitationProbability">63%</div>
+        <i class="fa-solid fa-wind fa-2xs icons"></i>
+        <div class="Details"><span id="WindSpeed">1.66</span> m/s</div>
+        
+        <div class="RefreshArea" onclick="ResetLocation = true; fetchData();">
+          <i class="fa-solid fa-rotate-right fa-2xs icons" style="margin: auto"></i>
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+  <script src="Scripts/WeatherScripts.js"></script>
+</html>

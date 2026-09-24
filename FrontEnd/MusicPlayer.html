@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="applicationTitle" content="Music Player Widget"/>
+    <meta name="windowSize" content="425 125"/>
+    <meta name="windowBorderRadius" content="30"/>
+    
+    <title>Music Player Widget</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/768b4c0e2c.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="Styles/styles.css">
+  </head>
+  
+  <body>
+    <div class="Widget MusicPlayer">
+      <div class="SongThumbnail">
+        <i class="fa-solid fa-music fa-3x icons MusicIcon" id="MusicIcon"></i>
+        <img src="" class="MusicThumbnail" id="SongThumbnail">
+      </div>
+      <div style="margin-left: 20px; margin-top: 15px; width: 100%">
+        <div class="SongTitle" id="SongTitle">Song Title</div>
+        <div class="SongArtist" id="SongArtist">Song Artist</div>
+        
+        <div class="MusicControlsArea">
+          <i class="fa-solid fa-forward-step fa-flip-horizontal fa-xl MusicButton" style="margin: 0" onclick="window.chrome.webview.postMessage('PreviousMediaTrack'); GetSongInfo();"></i>
+          
+          <div>
+            <i class="fa-solid fa-play fa-xl InsideButtons" id="PlayButton" onclick="window.chrome.webview.postMessage('ToggleMediaPlayback'); GetSongInfo();"></i>
+            <i class="fa-solid fa-pause fa-xl InsideButtons Invisible" id="PauseButton" onclick="window.chrome.webview.postMessage('ToggleMediaPlayback'); GetSongInfo();"></i>
+            
+            <i class="fa-solid fa-certificate fa-3x icons InsideButtonHolder" style="margin: 0"></i>
+          </div>
+          
+          <i class="fa-solid fa-forward-step fa-xl MusicButton" style="margin: 0" onclick="window.chrome.webview.postMessage('NextMediaTrack'); GetSongInfo();"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="Scripts/MusicPlayerScript.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    
+    <meta name="applicationTitle" content="Calendar Widget"/>
+    <meta name="windowSize" content="275 250"/>
+    <meta name="windowBorderRadius" content="30"/>
+    
+    <title>Calender</title>
+    
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://kit.fontawesome.com/768b4c0e2c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="Widget Calender">
+      <i class="fa-regular fa-circle-left fa-2xl CalenderButtons" style="margin-left: 195px;" onclick="UpdateCalendarOffset(-1)"></i>
+      <i class="fa-regular fa-circle-right fa-2xl CalenderButtons" style="margin-left: 235px;" onclick="UpdateCalendarOffset(1)"></i>
+      
+      <div class="Content Date"><span id="Month">July</span> <span id="Year">2026</span></div>
+      
+        <div class="Details Content DaysHolder" style="margin-top: 15px">
+          <span class="DayOnCalender">Su</span>
+          <span class="DayOnCalender">Mo</span>
+          <span class="DayOnCalender">Tue</span>
+          <span class="DayOnCalender">Wed</span>
+          <span class="DayOnCalender">Thu</span>
+          <span class="DayOnCalender">Fri</span>
+          <span class="DayOnCalender">Sat</span>
+        </div>
+        <div class="AllDaysOnCalenderContainer">
+          <div class="DayNumberOnCalender" id="Day0">29</div>
+          <div class="DayNumberOnCalender" id="Day1">30</div>
+          <div class="DayNumberOnCalender" id="Day2">1</div>
+          <div class="DayNumberOnCalender" id="Day3">2</div>
+          <div class="DayNumberOnCalender" id="Day4">3</div>
+          <div class="DayNumberOnCalender" id="Day5">4</div>
+          <div class="DayNumberOnCalender" id="Day6">5</div>
+          <div class="DayNumberOnCalender" id="Day7">6</div>
+          <div class="DayNumberOnCalender" id="Day8">7</div>
+          <div class="DayNumberOnCalender" id="Day9">8</div>
+          <div class="DayNumberOnCalender" id="Day10">9</div>
+          <div class="DayNumberOnCalender" id="Day11">10</div>
+          <div class="DayNumberOnCalender" id="Day12">11</div>
+          <div class="DayNumberOnCalender" id="Day13">12</div>
+          <div class="DayNumberOnCalender" id="Day14">13</div>
+          <div class="DayNumberOnCalender" id="Day15">14</div>
+          <div class="DayNumberOnCalender" id="Day16">15</div>
+          <div class="DayNumberOnCalender" id="Day17">16</div>
+          <div class="DayNumberOnCalender" id="Day18">17</div>
+          <div class="DayNumberOnCalender" id="Day19">18</div>
+          <div class="DayNumberOnCalender" id="Day20">19</div>
+          <div class="DayNumberOnCalender" id="Day21">20</div>
+          <div class="DayNumberOnCalender" id="Day22">21</div>
+          <div class="DayNumberOnCalender" id="Day23">22</div>
+          <div class="DayNumberOnCalender" id="Day24">23</div>
+          <div class="DayNumberOnCalender" id="Day25">24</div>
+          <div class="DayNumberOnCalender" id="Day26">25</div>
+          <div class="DayNumberOnCalender" id="Day27">26</div>
+          <div class="DayNumberOnCalender" id="Day28">27</div>
+          <div class="DayNumberOnCalender" id="Day29">28</div>
+          <div class="DayNumberOnCalender" id="Day30">29</div>
+          <div class="DayNumberOnCalender" id="Day31">30</div>
+          <div class="DayNumberOnCalender" id="Day32">31</div>
+          <div class="DayNumberOnCalender" id="Day33">1</div>
+          <div class="DayNumberOnCalender" id="Day34">2</div>
+          <div class="DayNumberOnCalender" id="Day35">3</div>
+          <div class="DayNumberOnCalender" id="Day36">4</div>
+          <div class="DayNumberOnCalender" id="Day37">5</div>
+          <div class="DayNumberOnCalender" id="Day38">6</div>
+          <div class="DayNumberOnCalender" id="Day39">7</div>
+          <div class="DayNumberOnCalender" id="Day40">8</div>
+          <div class="DayNumberOnCalender" id="Day41">9</div>
+        </div>
+    </div>
+  </body>
+  <script src="Scripts/CalenderScript.js"></script>
+</html>

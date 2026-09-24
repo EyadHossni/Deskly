@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="applicationTitle" content="World Clock Widget"/>
+    <meta name="windowSize" content="275 250"/>
+    <meta name="windowBorderRadius" content="30"/>
+    
+    <title>WorldClock Widget</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://kit.fontawesome.com/768b4c0e2c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <div class="Widget Calender">
+      <i class="fa-solid fa-location-dot fa-xl Temperature Content"></i>
+      <span class="SmallTitle" id="LocationTimezone">Cairo, Egypt</span>
+      
+      <i class="fa-regular fa-sun fa-lg WorldMapWeatherIcon CurrentWeatherIcon" id="SunnyIcon"></i>
+      <i class="fa-regular fa-moon fa-lg WorldMapWeatherIcon CurrentWeatherIcon Invisible" id="NightIcon"></i>
+      
+      <div class="CurrentTime" id="CurrentTime">11:33 PM</div>
+      <div class="CurrentDate" id="CurrentDate">Wednesday, July 22 2026</div>
+      
+      <div class="WorldClockGrid" id="WorldClockGrid">
+<!--        This is where the Country times get generated-->
+      </div>
+    </div>
+  </body>
+  
+  <script src="Scripts/WorldClockScript.js"></script>
+</html>

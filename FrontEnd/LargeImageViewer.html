@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="applicationTitle" content="Large Image Viewer Widget"/>
+    <meta name="windowSize" content="275 250"/>
+    <meta name="windowBorderRadius" content="30"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    
+    <title>Large Image Viewer Widget</title>
+    
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://kit.fontawesome.com/768b4c0e2c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+  <div class="Widget LargeImageViewer">
+    <i class="fa-regular fa-image fa-5x ImageIcon" style="margin-left: 8px; margin-top: 20px;"></i>
+    <img src="" class="ImageViewed" id="Image" onclick="if (ImageAvail) FileSelector.click()">
+    
+    <input type="file" id="file-selector" accept=".webp,.jpg,.jpeg,.png,.svg,.gif,.avif" style="display: none">
+    <pre id="file-content"></pre>
+  
+  </div>
+  </body>
+  
+  <script src="Scripts/ImageViewerScript.js"></script>
+</html>

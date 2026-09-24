@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    
+    <meta name="applicationTitle" content="Power Widget"/>
+    <meta name="windowSize" content="130 120"/>
+    <meta name="windowBorderRadius" content="30"/>
+    
+    <title>PowerWidget</title>
+    
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://kit.fontawesome.com/768b4c0e2c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <div class="Widget DeviceInfoApp">
+      <i class="fa-solid fa-pentagon fa-3x largeIcon" style="margin-left: 65px; margin-top: 12px;"></i>
+      
+      <i class="fa-solid fa-battery-full fa-rotate-270 fa-2xl DeviceInfoIcon" id="Full"></i>
+      <i class="fa-solid fa-bolt fa-2xl DeviceInfoIcon Invisible" id="Charging"></i>
+      <i class="fa-solid fa-battery-three-quarters fa-rotate-270 fa-2xl DeviceInfoIcon Invisible" id="ThreeQuarters"></i>
+      <i class="fa-solid fa-battery-quarter fa-rotate-270 fa-2xl DeviceInfoIcon Invisible" id="Quarter"></i>
+      <i class="fa-solid fa-battery-half fa-rotate-270 fa-2xl DeviceInfoIcon Invisible" id="Half"></i>
+      <i class="fa-solid fa-battery-empty fa-rotate-270 fa-2xl DeviceInfoIcon Invisible" id="Empty"></i>
+      
+      <div class="DeviceInfoTitle"><span id="Power">21</span>%</div>
+      <div class="Description Content">Battery</div>
+    </div>
+  </body>
+  
+  <script src="Scripts/PowerScript.js"></script>
+
+</html>
