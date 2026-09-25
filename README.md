@@ -8,11 +8,11 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?logo=windows&logoColor=white)
 ![Handmade](https://img.shields.io/badge/Made%20by%20hand-no%20AI%2C%20no%20vibe%20coding-2ea44f)
 
-<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/42d5c52f-eb23-4741-b7aa-d2e159a1efd9" />
-<img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/fa18a205-37bc-4d08-b653-e2f356712a6c" />
-<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/beb99b3a-835a-4569-a17f-960574413f92" />
-<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/26ce046b-0120-4810-bfd5-5185afb9625b" />
-<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/7e24575e-25e4-41a6-98d7-98b4a57bdbe2" />
+<img width="480" height="270" alt="10" src="https://github.com/user-attachments/assets/42d5c52f-eb23-4741-b7aa-d2e159a1efd9" />
+<img width="480" height="270" alt="8" src="https://github.com/user-attachments/assets/fa18a205-37bc-4d08-b653-e2f356712a6c" />
+<img width="480" height="270" alt="6" src="https://github.com/user-attachments/assets/beb99b3a-835a-4569-a17f-960574413f92" />
+<img width="480" height="270" alt="4" src="https://github.com/user-attachments/assets/26ce046b-0120-4810-bfd5-5185afb9625b" />
+<img width="480" height="270" alt="2" src="https://github.com/user-attachments/assets/7e24575e-25e4-41a6-98d7-98b4a57bdbe2" />
 
 ---
 
